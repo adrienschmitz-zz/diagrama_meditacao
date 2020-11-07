@@ -5,19 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagrama da Meditação</title>
-    <style>
-        body {
-            background: linear-gradient(to bottom, #050969 0%, #7a0119 100%);
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" type='text/css' href='/index.css' />
 </head>
 
 <body>
-    <div>
+    <div id="titulo">
+        Minha mente quando estou meditando
+    </div>
+    <div class='container'>
+        <div id="fantasia" class='tempo'>
+            Fantasia
+        </div>
+        <!--Div dinâmica que aparecerá em ao lado do tempo que o marcador apontar, com frases referentes aquele tempo-->
+        <div id="pensamentos">
+        </div>
+        <div id="passado" class='tempo'>
+            Passado
+        </div>
+        <div id="presente" class='tempo'>
+            Presente
+        </div>
+        <!--Um marcador que aponta para diferentes tempos-->
+        <div id="futuro" class='tempo'>
+            Futuro
+        </div>
+    </div>
 
+    <div id='rodape'>
+        Creditos: Adrien schmitz
     </div>
 
 </body>
