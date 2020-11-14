@@ -5,36 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagrama da Meditação</title>
-    <link rel="stylesheet" type='text/css' href='/index.css' />
+    <link rel="stylesheet" type='text/css' href='./css/index.css' />
 </head>
 
 <body>
-    <div id="titulo">
-        Minha mente quando estou meditando
+    <div class="container">
+        <div class="titulo">Meu foco quando estou meditando</div>
+        <div class="passado_container">
+            <div class="tempo passado">Passado</div>
+        </div>
+        <div class="fantasia_container">
+            <div class="tempo fantasia">Fantasia</div>
+        </div>
+        <div class="futuro_container">
+            <div class="tempo futuro">Futuro</div>
+        </div>
+        <div class="foco_container">
+            <div class="pensamentos" id="pensamentos"></div>
+            <canvas id="canvas"></canvas>
+            <img id="meditacao" src='./img/3804499.jpg' />
+        </div>
+        <div class="presente_container">
+            <div id="presente" class="tempo presente">Presente</div>
+        </div>
     </div>
-    <div class='container'>
-        <div id="fantasia" class='tempo'>
-            Fantasia
-        </div>
-        <!--Div dinâmica que aparecerá em ao lado do tempo que o marcador apontar, com frases referentes aquele tempo-->
-        <div id="pensamentos">
-        </div>
-        <div id="passado" class='tempo'>
-            Passado
-        </div>
-        <div id="presente" class='tempo'>
-            Presente
-        </div>
-        <!--Um marcador que aponta para diferentes tempos-->
-        <div id="futuro" class='tempo'>
-            Futuro
-        </div>
-    </div>
-
-    <div id='rodape'>
-        Creditos: Adrien schmitz
-    </div>
-
+    <div class="rodape">Créditos @adrien.schmitz <br> Imagem homem meditando: www.freepik.com <br>Musica:
+        https://www.bensound.com</div>
+    <script src="diagrama.js"></script>
 </body>
 
 </html>
