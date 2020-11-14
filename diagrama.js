@@ -5,6 +5,7 @@ var presente = document.getElementById('presente')
 var fantasia = ['E se eu...', ' Podia ter sido...', 'Se eu fosse...'];
 var passado = ['Ela disse...', 'Aquela viagem que fiz', '...e passei vergonha'];
 var futuro = ['Viagem semana que vem', 'Vou falar...', 'Preciso fazer...', 'Segunda eu vou...'];
+//var largura = window.matchMedia("(max-width: 560px)")
 
 
 // Dimensões do canvas
@@ -50,19 +51,27 @@ function animate() {
     if (x < 31) {
         Math.floor(Math.random() * (2 - 0 + 1)) + 0;
         pensamentos.style.opacity = 1;
+        pensamentos.style.marginTop = "-10";
         pensamentos.style.marginLeft = "-165px";
-        pensamentos.style.marginTop = "40";
         pensamentos.innerHTML = passado[p];
     } else if (x > 168) {
         p = Math.floor(Math.random() * (3 - 0)) + 0;
         pensamentos.style.opacity = 1;
-        pensamentos.style.marginLeft = "175px";
-        pensamentos.style.marginTop = "40";
+        if (window.matchMedia("(max-width: 560px)").matches) {
+            pensamentos.style.marginLeft = "175px";
+        } else {
+            pensamentos.style.marginLeft = "1154px";
+        }
+        pensamentos.style.marginTop = "-10";
         pensamentos.innerHTML = futuro[p];
     } else if (y < 31) {
         p = Math.floor(Math.random() * (3 - 0)) + 0;
         pensamentos.style.opacity = 1;
-        pensamentos.style.marginLeft = "20px";
+        if (window.matchMedia("(max-width: 560px)").matches) {
+            pensamentos.style.marginLeft = "20px";
+        } else {
+            pensamentos.style.marginLeft = "500px";
+        }
         pensamentos.style.marginTop = "-10";
         pensamentos.innerHTML = fantasia[p];
     } else if (y > 168) {

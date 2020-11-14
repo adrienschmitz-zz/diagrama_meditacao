@@ -1,7 +1,7 @@
 body {
   background: #fff;
-  width: 360px;
-  height: 740px;
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-family: sans-serif;
   font-weight: 700;
@@ -124,7 +124,52 @@ canvas {
   padding-left: 15px;
   padding-top: 4px;
   font-size: 15px;
-  height: 57px;
-  width: 560px;
+  height: 100%;
+  width: 100%;
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 360px;
+    height: 740px;
+  }
+
+  #meditacao {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -225px;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+  }
+
+  .pensamentos {
+    position: absolute;
+    margin-top: 115px;
+
+    height: 20px;
+    opacity: 0;
+    font-family: cursive;
+    font-size: 27px;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+  }
+
+  .rodape {
+    grid-area: rodape;
+    background-color: #e5e5e5;
+    bottom: 0;
+    color: #82929a;
+    padding-left: 15px;
+    padding-top: 4px;
+    font-size: 15px;
+    height: 57px;
+    width: 560px;
+    font-weight: 300;
+  }
 }
